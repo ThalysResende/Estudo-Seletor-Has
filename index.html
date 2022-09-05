@@ -3,67 +3,61 @@
 
 <head>
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Thalys Resende">
-    <meta name="description" content="Programador Web!">
-    <link rel="shortcut icon" href="./img/Icon_Logo.svg">
-    <link rel="stylesheet" href="./Style/style.css">
-    <title>SELETOR HAS CSS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Thalys Resende">
+  <meta name="description" content="Programador Web!">
+  <link rel="shortcut icon" href="./img/Icon_Logo.svg">
+  <link rel="stylesheet" href="./Style/style.css">
+  <title>Formulário Com Has</title>
 
 </head>
 
 <body>
     
-    <main class="Wrapper">
-        
-        <header class="Header">
-            <img src="./img/Logo_TheRes.svg" alt="">
-            <h2 class="Legend">STORE</h2>
-        </header>
-          
-        <form class="box">
-              
-            <h3>Olá, seja bem vindo!</h3>
-
-              <span>
-                <p>Área para acesso e registro!<br>
-                Selecione uma das opções a baixo.
-                </p>
-                <select class="Login">
-                  <option value="0">Entrar</option>
-                  <option value="1">Registrar</option>
-                </select>
-              </span>     
-              
-              <span class="Login_Entrar">
-                <label>E-mail</label>
-                <input type="email">
-                <label>Senha</label>
-                <input type="password">
-                <button class="Entrar">Iniciar Seção</button>
-              </span>
-              
-              <span class="Option_Register">
-                <label>Nome</label>
-                <input type="text">
-                <label>E-mail</label>
-                <input type="email">
-                <label>Senha</label>
-                <input type="password">
-                <label>Celular</label>
-                <input type="number">
-                <label>Cpf</label>
-                <input type="number">
-                <label>Endereço</label>
-                <input type="text">
-                <button class="Register">Registrar</button>
-              </span>                  
-        
-        </form>
-        
-    </main>
+  <main class="Wrapper">       
+    <header class="Header">
+        <img src="./img/Logo_TheRes.svg" alt="">
+        <h2 class="Legend">STORE</h2>
+    </header>         
+    <form action="#" class="box">            
+      <h3>Olá, seja bem vindo!</h3>
+      <section>
+        <p>Área para acesso e registro.<br>
+        Selecione uma das opções abaixo:
+        </p>
+        <select class="Login">
+          <option value="0">Entrar</option>
+          <option value="1">Registrar</option>
+        </select>
+      </section>     
+      
+      <section class="Login_Entrar">
+        <label>E-mail:</label>
+        <input type="email" name="e-mail" placeholder="" required>
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="" required>               
+        <button class="Entrar"><a href="./home.html">Iniciar Seção</a></button>
+      </section>
+      
+      <section class="Option_Register">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="" required>
+        <label>E-mail:</label>
+        <input type="email" name="e-mail" placeholder="" required>
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="" required>
+        <label>Celular:</label>
+        <input type="number" name="número" placeholder="(__) _____-____" required>
+        <label>Cpf:</label>
+        <input type="number" name="cpf" placeholder="_________-__" required>
+        <label>Endereço:</label>
+        <input type="text" name="endereço" placeholder="" required>
+        <button class="Register"><a href="./login.html">Registrar</a></button>
+      </section>                              
+    </form>       
+  </main>
 
 </body>
 </html>
